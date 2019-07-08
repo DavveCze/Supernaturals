@@ -1,0 +1,30 @@
+[
+
+{
+
+  "modid": "Supernaturals",
+
+  "name": "Supernaturals",
+
+  "description": "Mod with supernatural and magic",
+
+  "version":"${version}",
+
+  "mcversion": "${mcversion}",
+
+
+  "authorList": ["Davvecz", "AlucardTheBeast", "and more"],
+
+  "logoFile": "",
+
+  "screenshots": [],
+
+  "requiredMods": [""],
+
+  "dependencies": [""],
+
+  "useDependencyInformation": true
+
+}
+
+]
