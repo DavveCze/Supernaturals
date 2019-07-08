@@ -1,5 +1,5 @@
 # Supernaturals
-A mod with Supernaturals and magic!
+A mod with Supernatural and magic!
 
 ![BewitchmentV](https://img.shields.io/badge/Supernaturals%20version-0.0.0.1-red.svg?longCache=true&style=flat)  
   
