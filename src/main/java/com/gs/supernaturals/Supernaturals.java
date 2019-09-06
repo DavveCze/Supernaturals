@@ -15,9 +15,6 @@ public class Supernaturals {
     // Directly reference a log4j logger.
     public static final Logger LOGGER = LogManager.getLogger();
 
-    // Mod ID for reference
-    public static final String MODID = "supernaturals";
-
     // Setup proxy
     public static IProxy proxy = DistExecutor.runForDist(() -> ClientProxy::new, () -> ServerProxy::new);
 
@@ -28,7 +25,7 @@ public class Supernaturals {
     }
 
     // Setup
-    public void setup(final FMLCommonSetupEvent event) {
+    private void setup(final FMLCommonSetupEvent event) {
         proxy.init();
     }
 }
