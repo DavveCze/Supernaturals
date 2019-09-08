@@ -13,6 +13,7 @@ Download the latest jar build of Supernaturals and add it to your mods folder. T
 [![Discord](https://img.shields.io/badge/Discord-Join%20our%20server!-7289da.svg?longCache=true&style=for-the-badge)](https://discord.gg/eU8J9tb)
 
 Owned by ***DavveCze***  
+
 Designs by ***DavveCze*** & ***StarGer***  
 Art by ***Expora8***, ***MoonlitLamps***, ***CoderBoi***, ***Noxy***  
 Coding & Production by ***GenreShinobi*** 
