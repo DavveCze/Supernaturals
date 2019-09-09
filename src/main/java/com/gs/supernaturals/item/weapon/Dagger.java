@@ -10,6 +10,7 @@ import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
+import net.minecraft.potion.EffectInstance;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Hand;
@@ -20,11 +21,13 @@ public class Dagger extends SwordItem {
 
     private float attackDamage;
     private float attackSpeed;
+    private EffectInstance effect;
 
-    public Dagger(IItemTier tier, int damageIn, float speedIn, SwordItem.Properties properties) {
+    public Dagger(IItemTier tier, int damageIn, float speedIn, SwordItem.Properties properties, EffectInstance effectIn) {
         super( tier, damageIn, speedIn, properties);
         this.attackDamage = damageIn + tier.getAttackDamage();
         this.attackSpeed = speedIn;
+        this.effect = effectIn;
     }
 
     /**
@@ -33,16 +36,17 @@ public class Dagger extends SwordItem {
      */
     @Override
     public boolean hitEntity(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        Supernaturals.LOGGER.info("Call me on this bull");
-        if(attacker.swingingHand.equals(Hand.OFF_HAND)) {
-            stack.damageItem(1, attacker, (p_220045_0_) -> {
-                p_220045_0_.sendBreakAnimation(EquipmentSlotType.OFFHAND);
+        Supernaturals.LOGGER.info("Call me on this bull: ");
+        if(attacker.getActiveHand().equals(Hand.OFF_HAND)) {
+            stack.damageItem(1, attacker, (x) -> {
+                x.sendBreakAnimation(EquipmentSlotType.OFFHAND);
             });
-        } else if (attacker.swingingHand.equals(Hand.MAIN_HAND)) {
+        } else if (attacker.getActiveHand().equals(Hand.MAIN_HAND)) {
             stack.damageItem(1, attacker, (p_220045_0_) -> {
                 p_220045_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
             });
         }
+        Supernaturals.LOGGER.info("Made it out alive...");
         return true;
     }
 
@@ -59,16 +63,25 @@ public class Dagger extends SwordItem {
         return true;
     }
 
+
+
     @Override
     public boolean itemInteractionForEntity(ItemStack stack, PlayerEntity playerIn, LivingEntity target, Hand hand) {
         Supernaturals.LOGGER.info("Ya ya ee");
-        Supernaturals.LOGGER.info(this.getItem());
         if (playerIn.getHeldItemOffhand().getItem().equals(this.getItem())){
             ModPlayerEntity modPlayerEntity = new ModPlayerEntity(playerIn);
             modPlayerEntity.customAttackTargetEntityWithCurrentItem(playerIn, target);
-            modPlayerEntity.swingArm(Hand.OFF_HAND);
+            playerIn.swingArm(Hand.OFF_HAND);
+            if(!playerIn.getEntityWorld().isRemote) {
+                target.addPotionEffect(effect);
+            }
         }
         return false;
+    }
+
+    @Override
+    public boolean hasEffect(ItemStack stack) {
+        return true;
     }
 
     /**

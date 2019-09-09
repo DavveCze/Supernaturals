@@ -1,6 +1,7 @@
 package com.gs.supernaturals;
 
 import com.gs.supernaturals.core.ModBlocks;
+import com.gs.supernaturals.entity.player.ModPlayerEntity;
 import com.gs.supernaturals.setup.ClientProxy;
 import com.gs.supernaturals.setup.IProxy;
 import com.gs.supernaturals.setup.ServerProxy;
@@ -42,7 +43,6 @@ public class Supernaturals {
 
     // Setup
     private void setup(final FMLCommonSetupEvent event) {
-
         // Ore Generation
         OreGeneration.setupOreGeneration();
 
