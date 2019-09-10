@@ -16,6 +16,9 @@ public class ModItems {
     @ObjectHolder("supernaturals:silver_ingot")
     public static Item SILVERINGOT;
 
+    @ObjectHolder("supernaturals:silver_nugget")
+    public static Item SILVERNUGGET;
+
     @ObjectHolder("supernaturals:dagger")
     public static SwordItem DAGGER;
 }

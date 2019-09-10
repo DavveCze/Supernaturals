@@ -3,6 +3,7 @@
   "block.supernaturals.silver_ore": "Silver Ore",
   "block.supernaturals.silver_block": "Silver Block",
   "item.supernaturals.silver_ingot": "Silver Ingot",
+  "item.supernaturals.silver_nugget": "Silver Nugget",
   "item.supernaturals.dagger": "Dagger",
   "effect.supernaturals.bleeding": "Bleeding"
 }

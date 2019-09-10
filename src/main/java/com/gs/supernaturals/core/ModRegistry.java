@@ -39,6 +39,7 @@ public class ModRegistry {
         itemRegistryEvent.getRegistry().register(new BlockItem(ModBlocks.SILVERORE, new Item.Properties().group(creativeTab)).setRegistryName(ModBlocks.SILVERORE.getRegistryName()));
         itemRegistryEvent.getRegistry().register(new BlockItem(ModBlocks.SILVERBLOCK, new Item.Properties().group(creativeTab)).setRegistryName(ModBlocks.SILVERBLOCK.getRegistryName()));
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("silver_ingot"));
+        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("silver_nugget"));
         itemRegistryEvent.getRegistry().register(new Dagger(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(150).group(creativeTab), new EffectInstance(bleeding,900,0,false,true)).setRegistryName("dagger"));
     }
 }
