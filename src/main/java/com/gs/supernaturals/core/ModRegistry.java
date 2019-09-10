@@ -22,6 +22,8 @@ public class ModRegistry {
     public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
         blockRegistryEvent.getRegistry().register(new OreBlock(OreBlock.Properties.create(Material.ROCK).hardnessAndResistance(3.0f,3.0f)).setRegistryName("silver_ore"));
         blockRegistryEvent.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5.0F, 6.0F).sound(SoundType.METAL)).setRegistryName("silver_block"));
+        blockRegistryEvent.getRegistry().register(new OreBlock(OreBlock.Properties.create(Material.ROCK).hardnessAndResistance(3.0f, 3.0f)).setRegistryName("white_gold_ore"));
+        blockRegistryEvent.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5.0F, 6.0F).sound(SoundType.METAL)).setRegistryName("white_gold_block"));
     }
 
     // Register Effects
@@ -40,6 +42,12 @@ public class ModRegistry {
         itemRegistryEvent.getRegistry().register(new BlockItem(ModBlocks.SILVERBLOCK, new Item.Properties().group(creativeTab)).setRegistryName(ModBlocks.SILVERBLOCK.getRegistryName()));
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("silver_ingot"));
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("silver_nugget"));
+
+        itemRegistryEvent.getRegistry().register(new BlockItem(ModBlocks.WHITEGOLDORE, new Item.Properties().group(creativeTab)).setRegistryName(ModBlocks.WHITEGOLDORE.getRegistryName()));
+        itemRegistryEvent.getRegistry().register(new BlockItem(ModBlocks.WHITEGOLDBLOCK, new Item.Properties().group(creativeTab)).setRegistryName(ModBlocks.WHITEGOLDBLOCK.getRegistryName()));
+        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("white_gold_ingot"));
+        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("white_gold_nugget"));
+
         itemRegistryEvent.getRegistry().register(new Dagger(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(150).group(creativeTab), new EffectInstance(bleeding,900,0,false,true)).setRegistryName("dagger"));
     }
 }
