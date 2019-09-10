@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient":{
+    "item": "supernaturals:silver_ore"
+  },
+  "result": "supernaturals:silver_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

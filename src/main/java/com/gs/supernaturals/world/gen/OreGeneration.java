@@ -15,10 +15,13 @@ public class OreGeneration {
         // CountRangeConfig(count, bottomOffset, topOffset, maximum)
         CountRangeConfig silverOrePlacement = new CountRangeConfig(10, 0, 0, 64);
         int silverOreVeinSize = 9;
+        CountRangeConfig whiteGoldOrePlacement = new CountRangeConfig(10, 0, 0, 15);
+        int whiteGoldVeinSize = 9;
 
         for(BiomeManager.BiomeType btype : BiomeManager.BiomeType.values()) {
             for (BiomeManager.BiomeEntry biomeEntry : BiomeManager.getBiomes(btype)) {
                 biomeEntry.biome.addFeature( GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig( OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.SILVERORE.getDefaultState(), silverOreVeinSize), Placement.COUNT_RANGE, silverOrePlacement));
+                biomeEntry.biome.addFeature( GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig( OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.WHITEGOLDORE.getDefaultState(), whiteGoldVeinSize), Placement.COUNT_RANGE, whiteGoldOrePlacement));
             }
         }
     }

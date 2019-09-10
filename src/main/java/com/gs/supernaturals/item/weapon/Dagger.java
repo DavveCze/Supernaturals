@@ -81,7 +81,7 @@ public class Dagger extends SwordItem {
 
     @Override
     public boolean hasEffect(ItemStack stack) {
-        return true;
+        return false;
     }
 
     /**

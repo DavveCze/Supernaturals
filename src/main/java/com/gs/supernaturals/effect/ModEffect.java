@@ -31,9 +31,8 @@ public  class ModEffect extends Effect {
 
     @Override
     public boolean isReady(int duration, int amplifier) {
-        Supernaturals.LOGGER.info("isReady: " + duration);
         if (this.getEffect().equals(ModEffects.BLEEDING)) {
-            int j = 25 >> amplifier;
+            int j = 10 >> amplifier;
             if (j > 0) {
                 return duration % j == 0;
             } else {
