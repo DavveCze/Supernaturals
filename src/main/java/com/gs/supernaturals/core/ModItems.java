@@ -9,6 +9,9 @@ public class ModItems {
     @ObjectHolder("supernaturals:silver_ore")
     public static BlockItem SILVERORE;
 
+    @ObjectHolder("supernaturals:silver_block")
+    public static BlockItem SILVERBLOCK;
+
     @ObjectHolder("supernaturals:dagger")
     public static SwordItem DAGGER;
 }
