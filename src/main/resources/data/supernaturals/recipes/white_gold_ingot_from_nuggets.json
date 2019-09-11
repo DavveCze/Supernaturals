@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "white_gold_ingot",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "supernaturals:white_gold_nugget"
+    }
+  },
+  "result": {
+    "item": "supernaturals:white_gold_ingot"
+  }
+}

@@ -21,8 +21,11 @@ import net.minecraft.world.server.ServerWorld;
 
 public class ModPlayerEntity extends PlayerEntity {
 
+    public PlayerEntity playerEntity;
+
     public ModPlayerEntity(PlayerEntity playerEntity) {
         super(playerEntity.getEntityWorld(), playerEntity.getGameProfile());
+        this.playerEntity = playerEntity;
     }
 
     public void customAttackTargetEntityWithCurrentItem(PlayerEntity playerEntity, Entity targetEntity) {
