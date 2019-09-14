@@ -8,7 +8,6 @@ public class ClientProxy implements IProxy {
 
     @Override
     public void init() {
-        // TODO: init
     }
 
     @Override
