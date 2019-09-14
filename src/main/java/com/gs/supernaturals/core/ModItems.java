@@ -28,6 +28,11 @@ public class ModItems {
     @ObjectHolder("supernaturals:amethyst_ore")
     public static Item AMETHYST;
 
+    @ObjectHolder("supernaturals:magic_wood")
+    public static Item MAGICWOOD;
+    @ObjectHolder("supernaturals:cursed_wood")
+    public static Item CURSEDWOOD;
+
     @ObjectHolder("supernaturals:dagger")
     public static SwordItem DAGGER;
 }

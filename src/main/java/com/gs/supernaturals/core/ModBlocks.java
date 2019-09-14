@@ -16,6 +16,11 @@ public class ModBlocks {
     @ObjectHolder("supernaturals:white_gold_block")
     public static Block WHITEGOLDBLOCK;
 
+    @ObjectHolder("supernaturals:magic_wood")
+    public static Block MAGICWOOD;
+    @ObjectHolder("supernaturals:cursed_wood")
+    public static Block CURSEDWOOD;
+
     @ObjectHolder("supernaturals:amethyst_ore")
     public static OreBlock AMETHYSTORE;
 }

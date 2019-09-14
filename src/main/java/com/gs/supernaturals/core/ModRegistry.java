@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.OreBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.*;
 import net.minecraft.potion.*;
 import net.minecraftforge.event.RegistryEvent;
@@ -25,6 +26,8 @@ public class ModRegistry {
         blockRegistryEvent.getRegistry().register(new OreBlock(OreBlock.Properties.create(Material.ROCK).hardnessAndResistance(3.0f, 3.0f)).setRegistryName("white_gold_ore"));
         blockRegistryEvent.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5.0F, 6.0F).sound(SoundType.METAL)).setRegistryName("white_gold_block"));
         blockRegistryEvent.getRegistry().register(new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0f, 3.0f)).setRegistryName("amethyst_ore"));
+        blockRegistryEvent.getRegistry().register(new Block(Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName("magic_wood"));
+        blockRegistryEvent.getRegistry().register(new Block(Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName("cursed_wood"));
     }
 
     // Register Effects
@@ -53,6 +56,9 @@ public class ModRegistry {
         itemRegistryEvent.getRegistry().register(new BlockItem(ModBlocks.AMETHYSTORE, new Item.Properties().group(creativeTab)).setRegistryName(ModBlocks.AMETHYSTORE.getRegistryName()));
 
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("amethyst"));
+
+        itemRegistryEvent.getRegistry().register(new BlockItem(ModBlocks.MAGICWOOD, new Item.Properties().group(creativeTab)).setRegistryName("magic_wood"));
+        itemRegistryEvent.getRegistry().register(new BlockItem(ModBlocks.CURSEDWOOD, new Item.Properties().group(creativeTab)).setRegistryName("cursed_wood"));
 
         itemRegistryEvent.getRegistry().register(new Dagger(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(150).group(creativeTab), new EffectInstance(bleeding,900,0,false,true)).setRegistryName("dagger"));
     }
