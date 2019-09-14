@@ -25,6 +25,16 @@ public class ModItems {
     @ObjectHolder("supernaturals:white_gold_nugget")
     public static Item WHITEGOLDNUGGET;
 
+    @ObjectHolder("supernaturals:amethyst_ore")
+    public static Item AMETHYST;
+    @ObjectHolder("supernaturals:amethyst_block")
+    public static Item AMETHYSTBLOCK;
+
+    @ObjectHolder("supernaturals:magic_wood")
+    public static Item MAGICWOOD;
+    @ObjectHolder("supernaturals:cursed_wood")
+    public static Item CURSEDWOOD;
+
     @ObjectHolder("supernaturals:dagger")
     public static SwordItem DAGGER;
 }

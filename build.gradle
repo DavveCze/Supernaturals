@@ -179,5 +179,3 @@ task incrementBuild<< {
         throw new FileNotFoundException("Could not read version.properties!")
     }
 }
-
-// TODO: Setup CurseForge Push
