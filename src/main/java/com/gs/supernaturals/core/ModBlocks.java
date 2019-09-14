@@ -23,4 +23,6 @@ public class ModBlocks {
 
     @ObjectHolder("supernaturals:amethyst_ore")
     public static OreBlock AMETHYSTORE;
+    @ObjectHolder("supernaturals:amethyst_block")
+    public static Block AMETHYSTBLOCK;
 }
