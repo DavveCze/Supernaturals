@@ -24,6 +24,7 @@ public class ModRegistry {
         blockRegistryEvent.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5.0F, 6.0F).sound(SoundType.METAL)).setRegistryName("silver_block"));
         blockRegistryEvent.getRegistry().register(new OreBlock(OreBlock.Properties.create(Material.ROCK).hardnessAndResistance(3.0f, 3.0f)).setRegistryName("white_gold_ore"));
         blockRegistryEvent.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5.0F, 6.0F).sound(SoundType.METAL)).setRegistryName("white_gold_block"));
+        blockRegistryEvent.getRegistry().register(new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0f, 3.0f)).setRegistryName("amethyst_ore"));
     }
 
     // Register Effects
@@ -47,6 +48,11 @@ public class ModRegistry {
         itemRegistryEvent.getRegistry().register(new BlockItem(ModBlocks.WHITEGOLDBLOCK, new Item.Properties().group(creativeTab)).setRegistryName(ModBlocks.WHITEGOLDBLOCK.getRegistryName()));
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("white_gold_ingot"));
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("white_gold_nugget"));
+
+        // TODO: REMOVE THIS BLOCK ITEM
+        itemRegistryEvent.getRegistry().register(new BlockItem(ModBlocks.AMETHYSTORE, new Item.Properties().group(creativeTab)).setRegistryName(ModBlocks.AMETHYSTORE.getRegistryName()));
+
+        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("amethyst"));
 
         itemRegistryEvent.getRegistry().register(new Dagger(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(150).group(creativeTab), new EffectInstance(bleeding,900,0,false,true)).setRegistryName("dagger"));
     }

@@ -15,4 +15,7 @@ public class ModBlocks {
     public static OreBlock WHITEGOLDORE;
     @ObjectHolder("supernaturals:white_gold_block")
     public static Block WHITEGOLDBLOCK;
+
+    @ObjectHolder("supernaturals:amethyst_ore")
+    public static OreBlock AMETHYSTORE;
 }

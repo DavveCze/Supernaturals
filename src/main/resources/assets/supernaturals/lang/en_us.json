@@ -9,5 +9,7 @@
   "item.supernaturals.white_gold_ingot": "White Gold Ingot",
   "item.supernaturals.white_gold_nugget": "White Gold Nugget",
   "item.supernaturals.dagger": "Dagger",
-  "effect.supernaturals.bleeding": "Bleeding"
+  "effect.supernaturals.bleeding": "Bleeding",
+  "item.supernaturals.amethyst_ore": "Amethyst Ore",
+  "item.supernaturals.amethyst": "Amethyst"
 }
