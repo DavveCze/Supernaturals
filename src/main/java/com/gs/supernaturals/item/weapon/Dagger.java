@@ -11,23 +11,26 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.potion.EffectInstance;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.ActionResultType;
-import net.minecraft.util.Hand;
+import net.minecraft.potion.Effects;
+import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+
+import java.util.Random;
 
 public class Dagger extends SwordItem {
 
     private float attackDamage;
     private float attackSpeed;
     private EffectInstance effect;
+    private String metal;
 
-    public Dagger(IItemTier tier, int damageIn, float speedIn, SwordItem.Properties properties, EffectInstance effectIn) {
+    public Dagger(IItemTier tier, int damageIn, float speedIn, SwordItem.Properties properties, EffectInstance effectIn, String metal) {
         super( tier, damageIn, speedIn, properties);
         this.attackDamage = damageIn + tier.getAttackDamage();
         this.attackSpeed = speedIn;
         this.effect = effectIn;
+        this.metal = metal;
     }
 
     /**
@@ -36,7 +39,6 @@ public class Dagger extends SwordItem {
      */
     @Override
     public boolean hitEntity(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        Supernaturals.LOGGER.info("Call me on this bull: ");
         if(attacker.getActiveHand().equals(Hand.OFF_HAND)) {
             stack.damageItem(1, attacker, (x) -> {
                 x.sendBreakAnimation(EquipmentSlotType.OFFHAND);
@@ -46,7 +48,15 @@ public class Dagger extends SwordItem {
                 p_220045_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
             });
         }
-        Supernaturals.LOGGER.info("Made it out alive...");
+
+        if(this.metal.equals("silver_ingot") && !attacker.getEntityWorld().isRemote) {
+            target.addPotionEffect(new EffectInstance(Effects.WEAKNESS, 900, 0));
+        } else if (this.metal.equals("white_gold_ingot") && !attacker.getEntityWorld().isRemote) {
+            // TODO: Get Low / High Range from Design
+            if(Math.random() * 100 >= 90) {
+                target.attackEntityFrom(DamageSource.MAGIC, 2.0f);
+            }
+        }
         return true;
     }
 
@@ -62,6 +72,7 @@ public class Dagger extends SwordItem {
 
         return true;
     }
+
 
 
 

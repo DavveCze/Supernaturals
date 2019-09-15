@@ -1,5 +1,6 @@
 package com.gs.supernaturals.core;
 
+import com.gs.supernaturals.item.weapon.Dagger;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
@@ -36,5 +37,12 @@ public class ModItems {
     public static Item CURSEDWOOD;
 
     @ObjectHolder("supernaturals:dagger")
-    public static SwordItem DAGGER;
+    public static Dagger DAGGER;
+    @ObjectHolder("supernaturals:silver_dagger")
+    public static Dagger SILVERDAGGER;
+    @ObjectHolder("supernaturals:white_gold_dagger")
+    public static Dagger WHITEGOLDDAGGER;
+
+    @ObjectHolder("supernaturals:druid_leaf")
+    public static Item DRUIDLEAF;
 }

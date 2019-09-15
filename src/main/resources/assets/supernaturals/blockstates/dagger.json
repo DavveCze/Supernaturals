@@ -1,6 +1,6 @@
 {
   "variants":
   {
-    "": {"model":  "magelighter:item/dagger"}
+    "": {"model":  "supernaturals:item/dagger"}
   }
 }
