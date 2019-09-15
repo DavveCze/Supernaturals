@@ -1,0 +1,7 @@
+{
+  "parent": "item/handheld",
+  "textures":
+  {
+    "layer0": "supernaturals:item/white_gold_dagger"
+  }
+}

@@ -62,6 +62,10 @@ public class ModRegistry {
         itemRegistryEvent.getRegistry().register(new BlockItem(ModBlocks.MAGICWOOD, new Item.Properties().group(creativeTab)).setRegistryName("magic_wood"));
         itemRegistryEvent.getRegistry().register(new BlockItem(ModBlocks.CURSEDWOOD, new Item.Properties().group(creativeTab)).setRegistryName("cursed_wood"));
 
-        itemRegistryEvent.getRegistry().register(new Dagger(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(150).group(creativeTab), new EffectInstance(bleeding,900,0,false,true)).setRegistryName("dagger"));
+        itemRegistryEvent.getRegistry().register(new Dagger(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(150).group(creativeTab), new EffectInstance(bleeding,900,0,false,true), "iron_ingot").setRegistryName("dagger"));
+        itemRegistryEvent.getRegistry().register(new Dagger(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(132).group(creativeTab), new EffectInstance(bleeding, 900, 0, false, true), "silver_ingot").setRegistryName("silver_dagger"));
+        itemRegistryEvent.getRegistry().register(new Dagger(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(104).group(creativeTab), new EffectInstance(bleeding, 900, 0, false, true), "white_gold_ingot").setRegistryName("white_gold_dagger"));
+
+        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("druid_leaf"));
     }
 }

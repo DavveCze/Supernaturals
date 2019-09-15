@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " # ",
+    " @ "
+  ],
+  "key": {
+    "#": {
+      "item": "supernaturals:white_gold_ingot"
+    },
+    "@": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "supernaturals:white_gold_dagger"
+  }
+}

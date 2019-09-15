@@ -9,10 +9,13 @@
   "item.supernaturals.white_gold_ingot": "White Gold Ingot",
   "item.supernaturals.white_gold_nugget": "White Gold Nugget",
   "item.supernaturals.dagger": "Dagger",
+  "item.supernaturals.silver_dagger": "Silver Dagger",
+  "item.supernaturals.white_gold_dagger": "White Gold Dagger",
   "effect.supernaturals.bleeding": "Bleeding",
   "block.supernaturals.amethyst_ore": "Amethyst Ore",
   "item.supernaturals.amethyst": "Amethyst",
   "block.supernaturals.amethyst_block": "Amethyst Block",
   "block.supernaturals.magic_wood": "Magic Wood",
-  "block.supernaturals.cursed_wood": "Cursed Wood"
+  "block.supernaturals.cursed_wood": "Cursed Wood",
+  "item.supernaturals.druid_leaf": "Druid Leaf"
 }
