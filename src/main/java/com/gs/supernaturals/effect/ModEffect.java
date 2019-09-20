@@ -2,11 +2,14 @@ package com.gs.supernaturals.effect;
 
 import com.gs.supernaturals.Supernaturals;
 import com.gs.supernaturals.core.ModEffects;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.potion.Effect;
 import net.minecraft.potion.EffectType;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.DamageSource;
+
+import javax.annotation.Nullable;
 
 public  class ModEffect extends Effect {
     private final EffectType type;
@@ -24,23 +27,22 @@ public  class ModEffect extends Effect {
     public void performEffect(LivingEntity entityLivingBaseIn, int amplifier) {
         if (this.equals(ModEffects.BLEEDING)) {
             if (entityLivingBaseIn.getHealth() > 0.0F) {
-                entityLivingBaseIn.attackEntityFrom(DamageSource.GENERIC, 1.0F);
+                entityLivingBaseIn.attackEntityFrom(DamageSource.GENERIC, 3.0F);
             }
         }
     }
 
     @Override
     public boolean isReady(int duration, int amplifier) {
-        if (this.getEffect().equals(ModEffects.BLEEDING)) {
-            int j = 10 >> amplifier;
+        if (this.equals(ModEffects.BLEEDING)) {
+            int j = 25 >> amplifier;
             if (j > 0) {
                 return duration % j == 0;
             } else {
                 return true;
             }
-        } else {
-            return this.equals(Effects.HUNGER);
         }
+        return super.isReady(duration, amplifier);
     }
 
     @Override
@@ -61,5 +63,11 @@ public  class ModEffect extends Effect {
     @Override
     public ModEffect getEffect() {
         return (ModEffect)this;
+    }
+
+    @Override
+    public void affectEntity(@Nullable Entity source, @Nullable Entity indirectSource, LivingEntity entityLivingBaseIn, int amplifier, double health) {
+        this.performEffect(entityLivingBaseIn, amplifier);
+        super.affectEntity(source, indirectSource, entityLivingBaseIn, amplifier, health);
     }
 }
