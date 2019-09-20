@@ -1,5 +1,6 @@
 package com.gs.supernaturals.core;
 
+import com.gs.supernaturals.effect.ModEffectInstance;
 import com.gs.supernaturals.item.weapon.Dagger;
 import com.gs.supernaturals.effect.ModEffect;
 import net.minecraft.block.Block;
@@ -31,13 +32,10 @@ public class ModRegistry {
         blockRegistryEvent.getRegistry().register(new Block(Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName("cursed_wood"));
     }
 
-    // Register Effects
-    public static ModEffect bleeding = (ModEffect) new ModEffect(EffectType.HARMFUL, 16284963, "bleeding").setRegistryName("bleeding");
-
     // Register Potions
     @SubscribeEvent
     public static void onPotionRegistry(final RegistryEvent.Register<Potion> potionRegistryEvent) {
-       // potionRegistryEvent.getRegistry().register(new Potion(new EffectInstance(ModEffects.BLEEDING, 900)).setRegistryName("bleeding"));
+        potionRegistryEvent.getRegistry().register(new Potion(new EffectInstance(ModEffects.BLEEDING, 900,0, false,true)).setRegistryName("bleeding"));
     }
 
     // Register Items
@@ -62,9 +60,9 @@ public class ModRegistry {
         itemRegistryEvent.getRegistry().register(new BlockItem(ModBlocks.MAGICWOOD, new Item.Properties().group(creativeTab)).setRegistryName("magic_wood"));
         itemRegistryEvent.getRegistry().register(new BlockItem(ModBlocks.CURSEDWOOD, new Item.Properties().group(creativeTab)).setRegistryName("cursed_wood"));
 
-        itemRegistryEvent.getRegistry().register(new Dagger(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(150).group(creativeTab), new EffectInstance(bleeding,900,0,false,true), "iron_ingot").setRegistryName("dagger"));
-        itemRegistryEvent.getRegistry().register(new Dagger(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(132).group(creativeTab), new EffectInstance(bleeding, 900, 0, false, true), "silver_ingot").setRegistryName("silver_dagger"));
-        itemRegistryEvent.getRegistry().register(new Dagger(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(104).group(creativeTab), new EffectInstance(bleeding, 900, 0, false, true), "white_gold_ingot").setRegistryName("white_gold_dagger"));
+        itemRegistryEvent.getRegistry().register(new Dagger(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(150).group(creativeTab), new ModEffectInstance(ModEffects.BLEEDING,900,0,false,true), "iron_ingot").setRegistryName("dagger"));
+        itemRegistryEvent.getRegistry().register(new Dagger(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(132).group(creativeTab), new ModEffectInstance(ModEffects.BLEEDING, 900, 0, false, true), "silver_ingot").setRegistryName("silver_dagger"));
+        itemRegistryEvent.getRegistry().register(new Dagger(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(104).group(creativeTab), new ModEffectInstance(ModEffects.BLEEDING, 900, 0, false, true), "white_gold_ingot").setRegistryName("white_gold_dagger"));
 
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("druid_leaf"));
     }
