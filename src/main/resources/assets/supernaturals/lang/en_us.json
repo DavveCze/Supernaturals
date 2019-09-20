@@ -9,13 +9,22 @@
   "item.supernaturals.white_gold_ingot": "White Gold Ingot",
   "item.supernaturals.white_gold_nugget": "White Gold Nugget",
   "item.supernaturals.dagger": "Dagger",
+  "item.supernaturals.dagger.tooltip": "",
+  "item.supernaturals.dagger.basic_tip": "Can attack from offhand",
   "item.supernaturals.silver_dagger": "Silver Dagger",
+  "item.supernaturals.silver_dagger.tooltip": "Does x2 damage to supernatural monsters",
   "item.supernaturals.white_gold_dagger": "White Gold Dagger",
+  "item.supernaturals.white_gold_dagger.tooltip": "10% chance to deal magic damage",
   "effect.supernaturals.bleeding": "Bleeding",
   "block.supernaturals.amethyst_ore": "Amethyst Ore",
   "item.supernaturals.amethyst": "Amethyst",
   "block.supernaturals.amethyst_block": "Amethyst Block",
   "block.supernaturals.magic_wood": "Magic Wood",
   "block.supernaturals.cursed_wood": "Cursed Wood",
-  "item.supernaturals.druid_leaf": "Druid Leaf"
+  "item.supernaturals.druid_leaf": "Druid Leaf",
+  "item.supernaturals.bear_fang": "Bear Fang",
+  "item.supernaturals.wolf_fur": "Wolf Fur",
+  "item.supernaturals.wolf_heart": "Wolf Heart",
+  "item.supernaturals.bird_wing": "Bird Wing",
+  "item.supernaturals.dolphin_fin": "Dolphin Fin"
 }
