@@ -27,7 +27,7 @@ public  class ModEffect extends Effect {
     public void performEffect(LivingEntity entityLivingBaseIn, int amplifier) {
         if (this.equals(ModEffects.BLEEDING)) {
             if (entityLivingBaseIn.getHealth() > 0.0F) {
-                entityLivingBaseIn.attackEntityFrom(DamageSource.GENERIC, 1.0F);
+                entityLivingBaseIn.attackEntityFrom(DamageSource.GENERIC, 3.0F);
             }
         }
     }

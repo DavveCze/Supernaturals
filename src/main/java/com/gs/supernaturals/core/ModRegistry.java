@@ -51,7 +51,7 @@ public class ModRegistry {
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("white_gold_ingot"));
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("white_gold_nugget"));
 
-        // TODO: REMOVE THIS BLOCK ITEM
+        // TODO: REMOVE THIS BLOCK ITEM BEFORE RELEASE
         itemRegistryEvent.getRegistry().register(new BlockItem(ModBlocks.AMETHYSTORE, new Item.Properties().group(creativeTab)).setRegistryName(ModBlocks.AMETHYSTORE.getRegistryName()));
 
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("amethyst"));
@@ -65,5 +65,7 @@ public class ModRegistry {
         itemRegistryEvent.getRegistry().register(new Dagger(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(104).group(creativeTab), new ModEffectInstance(ModEffects.BLEEDING, 900, 0, false, true), "white_gold_ingot").setRegistryName("white_gold_dagger"));
 
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("druid_leaf"));
+
+        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("bear_fang"));
     }
 }

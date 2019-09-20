@@ -45,4 +45,7 @@ public class ModItems {
 
     @ObjectHolder("supernaturals:druid_leaf")
     public static Item DRUIDLEAF;
+
+    @ObjectHolder("supernaturals:bear_fang")
+    public static Item BEARFANG;
 }
