@@ -22,5 +22,7 @@
   "block.supernaturals.magic_wood": "Magic Wood",
   "block.supernaturals.cursed_wood": "Cursed Wood",
   "item.supernaturals.druid_leaf": "Druid Leaf",
-  "item.supernaturals.bear_fang": "Bear Fang"
+  "item.supernaturals.bear_fang": "Bear Fang",
+  "item.supernaturals.wolf_fur": "Wolf Fur",
+  "item.supernaturals.wolf_heart": "Wolf Heart"
 }

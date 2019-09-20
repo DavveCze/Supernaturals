@@ -48,4 +48,8 @@ public class ModItems {
 
     @ObjectHolder("supernaturals:bear_fang")
     public static Item BEARFANG;
+    @ObjectHolder("supernaturals:wolf_fur")
+    public static Item WOLFFUR;
+    @ObjectHolder("supernaturals:wolf_heart")
+    public static Item WOLFHEART;
 }
