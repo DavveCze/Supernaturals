@@ -54,4 +54,6 @@ public class ModItems {
     public static Item WOLFHEART;
     @ObjectHolder("supernaturals:bird_wing")
     public static Item BIRDWING;
+    @ObjectHolder("supernaturals:dolphin_fin")
+    public static Item DOLPHINFIN;
 }
