@@ -64,7 +64,7 @@ public class ModRegistry {
         itemRegistryEvent.getRegistry().register(new Dagger(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(132).group(creativeTab), new ModEffectInstance(ModEffects.BLEEDING, 900, 0, false, true), "silver_ingot").setRegistryName("silver_dagger"));
         itemRegistryEvent.getRegistry().register(new Dagger(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(104).group(creativeTab), new ModEffectInstance(ModEffects.BLEEDING, 900, 0, false, true), "white_gold_ingot").setRegistryName("white_gold_dagger"));
 
-        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("druid_leaf"));
+        itemRegistryEvent.getRegistry().register(new SwordItem(ItemTier.WOOD, 9, -2.4f, new SwordItem.Properties().maxDamage(5).group(creativeTab)).setRegistryName("druid_leaf"));
 
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("bear_fang"));
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("wolf_fur"));
