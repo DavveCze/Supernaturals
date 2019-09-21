@@ -67,4 +67,9 @@ public class ModItems {
 
     @ObjectHolder("supernaturals:silver_tip")
     public static Item SILVERTIP;
+    @ObjectHolder("supernaturals:brew_glass")
+    public static Item BREWGLASS;
+
+    @ObjectHolder("supernaturals:scream_bottle")
+    public static Item SCREAMBOTTLE;
 }
