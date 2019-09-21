@@ -2,7 +2,6 @@ package com.gs.supernaturals.core;
 
 import com.gs.supernaturals.effect.ModEffectInstance;
 import com.gs.supernaturals.item.weapon.Dagger;
-import com.gs.supernaturals.effect.ModEffect;
 import net.minecraft.block.Block;
 import net.minecraft.block.OreBlock;
 import net.minecraft.block.SoundType;
@@ -71,5 +70,7 @@ public class ModRegistry {
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("wolf_heart"));
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("bird_wing"));
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("dolphin_fin"));
+
+        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("silver_tip"));
     }
 }

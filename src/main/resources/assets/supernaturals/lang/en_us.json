@@ -26,5 +26,7 @@
   "item.supernaturals.wolf_fur": "Wolf Fur",
   "item.supernaturals.wolf_heart": "Wolf Heart",
   "item.supernaturals.bird_wing": "Bird Wing",
-  "item.supernaturals.dolphin_fin": "Dolphin Fin"
+  "item.supernaturals.dolphin_fin": "Dolphin Fin",
+  "item.supernaturals.silver_tip": "Silver Tip",
+  "item.supernaturals.silver_tip.tooltip": "Just the tip."
 }
