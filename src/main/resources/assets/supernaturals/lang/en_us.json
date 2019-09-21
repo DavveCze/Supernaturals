@@ -28,5 +28,7 @@
   "item.supernaturals.bird_wing": "Bird Wing",
   "item.supernaturals.dolphin_fin": "Dolphin Fin",
   "item.supernaturals.silver_tip": "Silver Tip",
-  "item.supernaturals.silver_tip.tooltip": "Just the tip."
+  "item.supernaturals.silver_tip.tooltip": "Just the tip.",
+  "item.supernaturals.jaguar_fang": "Jaguar Fang",
+  "item.supernaturals.jaguar_coat": "Jaguar Coat"
 }
