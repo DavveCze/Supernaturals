@@ -72,6 +72,8 @@ public class ModRegistry {
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("dolphin_fin"));
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("jaguar_fang"));
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("jaguar_coat"));
+        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("lizard_scale"));
+        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("lizard_heart"));
 
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("silver_tip"));
     }

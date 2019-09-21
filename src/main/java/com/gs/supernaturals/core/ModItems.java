@@ -60,6 +60,10 @@ public class ModItems {
     public static Item JAGUARFANG;
     @ObjectHolder("supernaturals:jaguar_coat")
     public static Item JAGUARCOAT;
+    @ObjectHolder("supernaturals:lizard_scale")
+    public static Item LIZARDSCALE;
+    @ObjectHolder("supernaturals:lizard_heart")
+    public static Item LIZARDHEART;
 
     @ObjectHolder("supernaturals:silver_tip")
     public static Item SILVERTIP;
