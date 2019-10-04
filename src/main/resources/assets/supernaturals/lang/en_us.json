@@ -34,5 +34,7 @@
   "item.supernaturals.lizard_scale": "Lizard Scale",
   "item.supernaturals.lizard_heart": "Lizard Heart",
   "item.supernaturals.brew_glass": "Brew Glass",
-  "item.supernaturals.scream_bottle": "Scream in a Bottle"
+  "item.supernaturals.scream_bottle": "Scream in a Bottle",
+  "item.supernaturals.kitsune_egg": "Kitsune Egg",
+  "entity.supernaturals.kitsune_entity": "Kitsune"
 }

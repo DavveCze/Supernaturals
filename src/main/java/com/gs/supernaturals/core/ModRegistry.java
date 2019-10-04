@@ -7,6 +7,7 @@ import net.minecraft.block.OreBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.*;
 import net.minecraft.potion.*;
 import net.minecraftforge.event.RegistryEvent;
@@ -78,7 +79,15 @@ public class ModRegistry {
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("silver_tip"));
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("brew_glass"));
 
-
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("scream_bottle"));
+
+        itemRegistryEvent.getRegistry().register(new SpawnEggItem(ModEntity.KITSUNE, 0xfcba03, 0xe05702, new Item.Properties().group(creativeTab)).setRegistryName("kitsune_egg"));
     }
+
+    @SubscribeEvent
+    public static void onEntityRegistry(final RegistryEvent.Register<EntityType<?>> entityRegistryEvent) {
+        entityRegistryEvent.getRegistry().register(ModEntity.KITSUNE);
+    }
+
+
 }

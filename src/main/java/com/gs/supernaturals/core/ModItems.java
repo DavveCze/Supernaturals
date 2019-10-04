@@ -72,4 +72,7 @@ public class ModItems {
 
     @ObjectHolder("supernaturals:scream_bottle")
     public static Item SCREAMBOTTLE;
+
+    @ObjectHolder("supernaturals:kitsune_egg")
+    public static Item KITSUNEEGG;
 }
