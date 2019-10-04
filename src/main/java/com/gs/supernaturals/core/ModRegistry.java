@@ -2,12 +2,12 @@ package com.gs.supernaturals.core;
 
 import com.gs.supernaturals.effect.ModEffectInstance;
 import com.gs.supernaturals.item.weapon.Dagger;
-import com.gs.supernaturals.effect.ModEffect;
 import net.minecraft.block.Block;
 import net.minecraft.block.OreBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.*;
 import net.minecraft.potion.*;
 import net.minecraftforge.event.RegistryEvent;
@@ -71,5 +71,23 @@ public class ModRegistry {
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("wolf_heart"));
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("bird_wing"));
         itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("dolphin_fin"));
+        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("jaguar_fang"));
+        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("jaguar_coat"));
+        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("lizard_scale"));
+        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("lizard_heart"));
+
+        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("silver_tip"));
+        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("brew_glass"));
+
+        itemRegistryEvent.getRegistry().register(new Item(new Item.Properties().group(creativeTab)).setRegistryName("scream_bottle"));
+
+        itemRegistryEvent.getRegistry().register(new SpawnEggItem(ModEntity.KITSUNE, 0xfcba03, 0xe05702, new Item.Properties().group(creativeTab)).setRegistryName("kitsune_egg"));
     }
+
+    @SubscribeEvent
+    public static void onEntityRegistry(final RegistryEvent.Register<EntityType<?>> entityRegistryEvent) {
+        entityRegistryEvent.getRegistry().register(ModEntity.KITSUNE);
+    }
+
+
 }

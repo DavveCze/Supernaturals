@@ -6,6 +6,7 @@ import com.gs.supernaturals.setup.ClientProxy;
 import com.gs.supernaturals.setup.IProxy;
 import com.gs.supernaturals.setup.ServerProxy;
 import com.gs.supernaturals.util.Reference;
+import com.gs.supernaturals.world.gen.EntitySpawning;
 import com.gs.supernaturals.world.gen.OreGeneration;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
@@ -45,6 +46,9 @@ public class Supernaturals {
     private void setup(final FMLCommonSetupEvent event) {
         // Ore Generation
         OreGeneration.setupOreGeneration();
+
+        // Entity Spawning
+        EntitySpawning.setupEntitySpawning();
 
         // Initializations
         proxy.init();

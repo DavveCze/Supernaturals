@@ -26,5 +26,15 @@
   "item.supernaturals.wolf_fur": "Wolf Fur",
   "item.supernaturals.wolf_heart": "Wolf Heart",
   "item.supernaturals.bird_wing": "Bird Wing",
-  "item.supernaturals.dolphin_fin": "Dolphin Fin"
+  "item.supernaturals.dolphin_fin": "Dolphin Fin",
+  "item.supernaturals.silver_tip": "Silver Tip",
+  "item.supernaturals.silver_tip.tooltip": "Just the tip.",
+  "item.supernaturals.jaguar_fang": "Jaguar Fang",
+  "item.supernaturals.jaguar_coat": "Jaguar Coat",
+  "item.supernaturals.lizard_scale": "Lizard Scale",
+  "item.supernaturals.lizard_heart": "Lizard Heart",
+  "item.supernaturals.brew_glass": "Brew Glass",
+  "item.supernaturals.scream_bottle": "Scream in a Bottle",
+  "item.supernaturals.kitsune_egg": "Kitsune Egg",
+  "entity.supernaturals.kitsune_entity": "Kitsune"
 }

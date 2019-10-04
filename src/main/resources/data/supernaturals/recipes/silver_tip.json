@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "silver_ingot",
+  "ingredients": [
+    {
+      "item": "supernaturals:silver_nugget"
+    }
+  ],
+  "result": {
+    "item": "supernaturals:silver_tip"
+  }
+}
