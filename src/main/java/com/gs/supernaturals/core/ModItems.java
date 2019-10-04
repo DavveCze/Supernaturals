@@ -56,4 +56,23 @@ public class ModItems {
     public static Item BIRDWING;
     @ObjectHolder("supernaturals:dolphin_fin")
     public static Item DOLPHINFIN;
+    @ObjectHolder("supernaturals:jaguar_fang")
+    public static Item JAGUARFANG;
+    @ObjectHolder("supernaturals:jaguar_coat")
+    public static Item JAGUARCOAT;
+    @ObjectHolder("supernaturals:lizard_scale")
+    public static Item LIZARDSCALE;
+    @ObjectHolder("supernaturals:lizard_heart")
+    public static Item LIZARDHEART;
+
+    @ObjectHolder("supernaturals:silver_tip")
+    public static Item SILVERTIP;
+    @ObjectHolder("supernaturals:brew_glass")
+    public static Item BREWGLASS;
+
+    @ObjectHolder("supernaturals:scream_bottle")
+    public static Item SCREAMBOTTLE;
+
+    @ObjectHolder("supernaturals:kitsune_egg")
+    public static Item KITSUNEEGG;
 }
