@@ -1,0 +1,78 @@
+{
+
+  "itemGroup.supernaturals": "Supernaturals",
+
+  "block.supernaturals.silver_ore": "Stříbrná ruda",
+
+  "block.supernaturals.silver_block": "Stříbrný blok",
+
+  "item.supernaturals.silver_ingot": "Stříbrný ingot",
+
+  "item.supernaturals.silver_nugget": "Stříbrný nuget",
+
+  "block.supernaturals.white_gold_ore": "Ruda bílého zlata",
+
+  "block.supernaturals.white_gold_block": "Blok bílého zlata",
+
+  "item.supernaturals.white_gold_ingot": "Ingot bílého zlata",
+
+  "item.supernaturals.white_gold_nugget": "Nuget bílého zlata",
+
+  "item.supernaturals.dagger": "Dýka",
+
+  "item.supernaturals.dagger.tooltip": "",
+
+  "item.supernaturals.dagger.basic_tip": "Můžete útočit oběma rukama",
+
+  "item.supernaturals.silver_dagger": "Stříbrná dýka",
+
+  "item.supernaturals.silver_dagger.tooltip": "Působí 2x větší poškození nadpřirozeným",
+
+  "item.supernaturals.white_gold_dagger": "Dýka z bílého zlata",
+
+  "item.supernaturals.white_gold_dagger.tooltip": "10% šance na magické poškození",
+
+  "effect.supernaturals.bleeding": "Krvácení"
+  "block.supernaturals.amethyst_ore": "Ruda Ametystu",
+
+  "item.supernaturals.amethyst": "Ametyst",
+
+  "block.supernaturals.amethyst_block": "Blok ametystu",
+
+  "block.supernaturals.magic_wood": "Magic Wood",
+
+  "block.supernaturals.cursed_wood": "Cursed Wood",
+
+  "item.supernaturals.druid_leaf": "Druid Leaf",
+
+  "item.supernaturals.bear_fang": "Bear Fang",
+
+  "item.supernaturals.wolf_fur": "Wolf Fur",
+
+  "item.supernaturals.wolf_heart": "Wolf Heart",
+
+  "item.supernaturals.bird_wing": "Bird Wing",
+
+  "item.supernaturals.dolphin_fin": "Dolphin Fin",
+
+  "item.supernaturals.silver_tip": "Silver Tip",
+
+  "item.supernaturals.silver_tip.tooltip": "Just the tip.",
+
+  "item.supernaturals.jaguar_fang": "Jaguar Fang",
+
+  "item.supernaturals.jaguar_coat": "Jaguar Coat",
+
+  "item.supernaturals.lizard_scale": "Lizard Scale",
+
+  "item.supernaturals.lizard_heart": "Lizard Heart",
+
+  "item.supernaturals.brew_glass": "Brew Glass",
+
+  "item.supernaturals.scream_bottle": "Scream in a Bottle",
+
+  "item.supernaturals.kitsune_egg": "Kitsune Egg",
+
+  "entity.supernaturals.kitsune_entity": "Kitsune"
+
+}
