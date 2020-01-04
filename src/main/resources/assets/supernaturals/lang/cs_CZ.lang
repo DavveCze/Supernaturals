@@ -39,39 +39,39 @@
 
   "block.supernaturals.amethyst_block": "Blok ametystu",
 
-  "block.supernaturals.magic_wood": "Magic Wood",
+  "block.supernaturals.magic_wood": "Magické dřevo",
 
-  "block.supernaturals.cursed_wood": "Cursed Wood",
+  "block.supernaturals.cursed_wood": "Prokleté dřevo",
 
-  "item.supernaturals.druid_leaf": "Druid Leaf",
+  "item.supernaturals.druid_leaf": "Druidský list",
 
-  "item.supernaturals.bear_fang": "Bear Fang",
+  "item.supernaturals.bear_fang": "Medvědí tesák",
 
-  "item.supernaturals.wolf_fur": "Wolf Fur",
+  "item.supernaturals.wolf_fur": "Vlčí kožešina",
 
-  "item.supernaturals.wolf_heart": "Wolf Heart",
+  "item.supernaturals.wolf_heart": Vlčí srdce",
 
-  "item.supernaturals.bird_wing": "Bird Wing",
+  "item.supernaturals.bird_wing": "Ptačí křídlo",
 
-  "item.supernaturals.dolphin_fin": "Dolphin Fin",
+  "item.supernaturals.dolphin_fin": "Delfíní ploutev",
 
-  "item.supernaturals.silver_tip": "Silver Tip",
+  "item.supernaturals.silver_tip": "Stříbrný hrot",
 
-  "item.supernaturals.silver_tip.tooltip": "Just the tip.",
+  "item.supernaturals.silver_tip.tooltip": "Prostě hrot.",
 
-  "item.supernaturals.jaguar_fang": "Jaguar Fang",
+  "item.supernaturals.jaguar_fang": "Jaguáří tesák",
 
-  "item.supernaturals.jaguar_coat": "Jaguar Coat",
+  "item.supernaturals.jaguar_coat": "Jaguáří kožešina",
 
-  "item.supernaturals.lizard_scale": "Lizard Scale",
+  "item.supernaturals.lizard_scale": "Ještěrčí šupina",
 
-  "item.supernaturals.lizard_heart": "Lizard Heart",
+  "item.supernaturals.lizard_heart": "Ještěrčí srdce",
 
-  "item.supernaturals.brew_glass": "Brew Glass",
+  "item.supernaturals.brew_glass": "Varné sklo",
 
-  "item.supernaturals.scream_bottle": "Scream in a Bottle",
+  "item.supernaturals.scream_bottle": "Řev v láhvi",
 
-  "item.supernaturals.kitsune_egg": "Kitsune Egg",
+  "item.supernaturals.kitsune_egg": "Vejce kitsune",
 
   "entity.supernaturals.kitsune_entity": "Kitsune"
 
