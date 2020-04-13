@@ -19,9 +19,11 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.server.ServerWorld;
 
+@SuppressWarnings("EntityConstructor")
 public class ModPlayerEntity extends PlayerEntity {
 
     public PlayerEntity playerEntity;
+
 
     public ModPlayerEntity(PlayerEntity playerEntity) {
         super(playerEntity.getEntityWorld(), playerEntity.getGameProfile());
@@ -52,7 +54,7 @@ public class ModPlayerEntity extends PlayerEntity {
                     int i = 0;
                     i = i + EnchantmentHelper.getKnockbackModifier(playerEntity);
                     if (playerEntity.isSprinting() && flag) {
-                        playerEntity.world.playSound((PlayerEntity) null, playerEntity.posX, playerEntity.posY, playerEntity.posZ, SoundEvents.ENTITY_PLAYER_ATTACK_KNOCKBACK, playerEntity.getSoundCategory(), 1.0F, 1.0F);
+                        playerEntity.world.playSound((PlayerEntity) null, playerEntity.getPosX(), playerEntity.getPosY(), playerEntity.getPosZ(), SoundEvents.ENTITY_PLAYER_ATTACK_KNOCKBACK, playerEntity.getSoundCategory(), 1.0F, 1.0F);
                         ++i;
                         flag1 = true;
                     }
@@ -110,7 +112,7 @@ public class ModPlayerEntity extends PlayerEntity {
                                 }
                             }
 
-                            playerEntity.world.playSound((PlayerEntity) null, playerEntity.posX, playerEntity.posY, playerEntity.posZ, SoundEvents.ENTITY_PLAYER_ATTACK_SWEEP, playerEntity.getSoundCategory(), 1.0F, 1.0F);
+                            playerEntity.world.playSound((PlayerEntity) null, playerEntity.getPosX(), playerEntity.getPosY(), playerEntity.getPosZ(), SoundEvents.ENTITY_PLAYER_ATTACK_SWEEP, playerEntity.getSoundCategory(), 1.0F, 1.0F);
                             playerEntity.spawnSweepParticles();
 
                         }
@@ -122,15 +124,15 @@ public class ModPlayerEntity extends PlayerEntity {
                         }
 
                         if (flag2) {
-                            playerEntity.world.playSound((PlayerEntity) null, playerEntity.posX, playerEntity.posY, playerEntity.posZ, SoundEvents.ENTITY_PLAYER_ATTACK_CRIT, playerEntity.getSoundCategory(), 1.0F, 1.0F);
+                            playerEntity.world.playSound((PlayerEntity) null, playerEntity.getPosX(), playerEntity.getPosY(), playerEntity.getPosZ(), SoundEvents.ENTITY_PLAYER_ATTACK_CRIT, playerEntity.getSoundCategory(), 1.0F, 1.0F);
                             playerEntity.onCriticalHit(targetEntity);
                         }
 
                         if (!flag2 && !flag3) {
                             if (flag) {
-                                playerEntity.world.playSound((PlayerEntity) null, playerEntity.posX, playerEntity.posY, playerEntity.posZ, SoundEvents.ENTITY_PLAYER_ATTACK_STRONG, playerEntity.getSoundCategory(), 1.0F, 1.0F);
+                                playerEntity.world.playSound((PlayerEntity) null, playerEntity.getPosX(), playerEntity.getPosY(), playerEntity.getPosZ(), SoundEvents.ENTITY_PLAYER_ATTACK_STRONG, playerEntity.getSoundCategory(), 1.0F, 1.0F);
                             } else {
-                                playerEntity.world.playSound((PlayerEntity) null, playerEntity.posX, playerEntity.posY, playerEntity.posZ, SoundEvents.ENTITY_PLAYER_ATTACK_WEAK, playerEntity.getSoundCategory(), 1.0F, 1.0F);
+                                playerEntity.world.playSound((PlayerEntity) null, playerEntity.getPosX(), playerEntity.getPosY(), playerEntity.getPosZ(), SoundEvents.ENTITY_PLAYER_ATTACK_WEAK, playerEntity.getSoundCategory(), 1.0F, 1.0F);
                             }
                         }
 
@@ -168,13 +170,13 @@ public class ModPlayerEntity extends PlayerEntity {
 
                             if (playerEntity.world instanceof ServerWorld && f5 > 2.0F) {
                                 int k = (int) ((double) f5 * 0.5D);
-                                ((ServerWorld) playerEntity.world).spawnParticle(ParticleTypes.DAMAGE_INDICATOR, targetEntity.posX, targetEntity.posY + (double) (targetEntity.getHeight() * 0.5F), targetEntity.posZ, k, 0.1D, 0.0D, 0.1D, 0.2D);
+                                ((ServerWorld) playerEntity.world).spawnParticle(ParticleTypes.DAMAGE_INDICATOR, targetEntity.getPosX(), targetEntity.getPosY() + (double) (targetEntity.getHeight() * 0.5F), targetEntity.getPosZ(), k, 0.1D, 0.0D, 0.1D, 0.2D);
                             }
                         }
 
                         playerEntity.addExhaustion(0.1F);
                     } else {
-                        playerEntity.world.playSound((PlayerEntity) null, playerEntity.posX, playerEntity.posY, playerEntity.posZ, SoundEvents.ENTITY_PLAYER_ATTACK_NODAMAGE, playerEntity.getSoundCategory(), 1.0F, 1.0F);
+                        playerEntity.world.playSound((PlayerEntity) null, playerEntity.getPosX(), playerEntity.getPosY(), playerEntity.getPosZ(), SoundEvents.ENTITY_PLAYER_ATTACK_NODAMAGE, playerEntity.getSoundCategory(), 1.0F, 1.0F);
                         if (flag4) {
                             targetEntity.extinguish();
                         }
