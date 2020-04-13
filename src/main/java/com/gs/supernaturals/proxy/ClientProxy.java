@@ -1,6 +1,6 @@
 package com.gs.supernaturals.proxy;
 
-import com.gs.supernaturals.client.renders.KitsuneEntityRender;
+import com.gs.supernaturals.client.renders.KitsuneEntityRenderer;
 import com.gs.supernaturals.entity.ModEntities;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.PlayerEntity;
@@ -11,7 +11,7 @@ public class ClientProxy implements IProxy {
 
     @Override
     public void init() {
-        RenderingRegistry.registerEntityRenderingHandler(ModEntities.KITSUNE.get(), KitsuneEntityRender::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntities.KITSUNE.get(), KitsuneEntityRenderer::new);
     }
 
     @Override

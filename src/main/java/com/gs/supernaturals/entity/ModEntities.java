@@ -5,11 +5,13 @@ import com.gs.supernaturals.entity.creatures.KitsuneEntity;
 import com.gs.supernaturals.item.ModItems;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.gen.Heightmap;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -36,13 +38,13 @@ public class ModEntities {
     public static void registerEntities(RegistryEvent.Register<EntityType<?>> e) {
         addSpawn(KITSUNE.get(), 6, 2, 5, ForgeRegistries.BIOMES.getValues());
 
-//        EntitySpawnPlacementRegistry.register(KITSUNE.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.WORLD_SURFACE, XXX::spawnPlacement);
+        EntitySpawnPlacementRegistry.register(KITSUNE.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.WORLD_SURFACE, KitsuneEntity::spawnPlacement);
     }
 
     public static <T extends Entity> RegistryObject<EntityType<T>> register(String key, EntityType.Builder<T> builder, int primaryColor, int secondaryColor) {
         EntityType<T> type = builder.build(key);
         ModItems.ITEMS.register(
-                key,
+                key+"_spawn_egg",
                 () -> new SpawnEggItem(type, primaryColor, secondaryColor,
                         new Item.Properties().group(ItemGroup.MISC)
                 )

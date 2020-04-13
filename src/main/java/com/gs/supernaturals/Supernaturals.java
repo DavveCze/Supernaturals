@@ -31,7 +31,7 @@ public class Supernaturals {
 
     public static IProxy proxy = DistExecutor.runForDist(() -> ClientProxy::new, () -> ServerProxy::new);
 
-    public static final ItemGroup creativeTab = new ItemGroup(NAME) {
+    public static final ItemGroup creativeTab = new ItemGroup(MOD_ID) {
 
         @Override
         public ItemStack createIcon() {

@@ -12,6 +12,6 @@ public class ModEffects {
 
     public static final DeferredRegister<Effect> EFFECTS = new DeferredRegister<>(ForgeRegistries.POTIONS, Supernaturals.MOD_ID);
 
-    public static RegistryObject<BleedingEffect> BLEEDING = EFFECTS.register("bleeding", () ->
+    public static RegistryObject<Effect> BLEEDING = EFFECTS.register("bleeding", () ->
             new BleedingEffect(EffectType.HARMFUL, 16284963, "bleeding"));
 }

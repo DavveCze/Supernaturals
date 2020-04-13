@@ -14,8 +14,8 @@ import net.minecraftforge.fml.client.registry.IRenderFactory;
 import javax.annotation.Nullable;
 
 @OnlyIn(Dist.CLIENT)
-public class KitsuneEntityRender extends LivingRenderer<KitsuneEntity, KitsuneEntityModelUpdated> {
-    public KitsuneEntityRender(EntityRendererManager manager) {
+public class KitsuneEntityRenderer extends LivingRenderer<KitsuneEntity, KitsuneEntityModelUpdated> {
+    public KitsuneEntityRenderer(EntityRendererManager manager) {
         super(manager, new KitsuneEntityModelUpdated(), 0f);
     }
 
