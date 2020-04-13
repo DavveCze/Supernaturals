@@ -1,4 +1,4 @@
-package com.gs.supernaturals.setup;
+package com.gs.supernaturals.proxy;
 
 import com.gs.supernaturals.client.renders.ModRenderRegistry;
 import net.minecraft.client.Minecraft;
@@ -13,12 +13,12 @@ public class ClientProxy implements IProxy {
     }
 
     @Override
-    public World getClientWorld() {
+    public World getWorld() {
         return Minecraft.getInstance().world;
     }
 
     @Override
-    public PlayerEntity getClientPlayer() {
+    public PlayerEntity getPlayer() {
         return Minecraft.getInstance().player;
     }
 }

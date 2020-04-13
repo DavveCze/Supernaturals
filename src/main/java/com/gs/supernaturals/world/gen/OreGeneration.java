@@ -1,6 +1,6 @@
 package com.gs.supernaturals.world.gen;
 
-import com.gs.supernaturals.core.ModBlocks;
+import com.gs.supernaturals.blocks.ModBlocks;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.Feature;
@@ -28,11 +28,11 @@ public class OreGeneration {
         for(BiomeManager.BiomeType btype : BiomeManager.BiomeType.values()) {
             for (BiomeManager.BiomeEntry biomeEntry : BiomeManager.getBiomes(btype)) {
                 // Silver
-                biomeEntry.biome.addFeature( GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig( OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.SILVERORE.getDefaultState(), silverOreVeinSize), Placement.COUNT_RANGE, silverOrePlacement));
+                biomeEntry.biome.addFeature( GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig( OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.SILVER_ORE.getDefaultState(), silverOreVeinSize), Placement.COUNT_RANGE, silverOrePlacement));
                 // White Gold
-                biomeEntry.biome.addFeature( GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig( OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.WHITEGOLDORE.getDefaultState(), whiteGoldVeinSize), Placement.COUNT_RANGE, whiteGoldOrePlacement));
+                biomeEntry.biome.addFeature( GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig( OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.WHITE_GOLD_ORE.getDefaultState(), whiteGoldVeinSize), Placement.COUNT_RANGE, whiteGoldOrePlacement));
                 // Amethyst
-                biomeEntry.biome.addFeature( GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig( OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.AMETHYSTORE.getDefaultState(), amethystVeinSize), Placement.COUNT_RANGE, whiteGoldOrePlacement));
+                biomeEntry.biome.addFeature( GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig( OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.AMETHYST_ORE.getDefaultState(), amethystVeinSize), Placement.COUNT_RANGE, whiteGoldOrePlacement));
             }
         }
     }

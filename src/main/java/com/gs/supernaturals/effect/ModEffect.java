@@ -1,12 +1,9 @@
 package com.gs.supernaturals.effect;
 
-import com.gs.supernaturals.Supernaturals;
-import com.gs.supernaturals.core.ModEffects;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.potion.Effect;
 import net.minecraft.potion.EffectType;
-import net.minecraft.potion.Effects;
 import net.minecraft.util.DamageSource;
 
 import javax.annotation.Nullable;

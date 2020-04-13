@@ -1,6 +1,5 @@
-package com.gs.supernaturals.core;
+package com.gs.supernaturals.effect;
 
-import com.gs.supernaturals.effect.ModEffect;
 import net.minecraft.potion.EffectType;
 import net.minecraftforge.registries.ObjectHolder;
 

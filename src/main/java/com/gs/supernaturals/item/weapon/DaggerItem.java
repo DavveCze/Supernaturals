@@ -27,7 +27,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Random;
 
-public class Dagger extends SwordItem {
+public class DaggerItem extends SwordItem {
 
     private float attackDamage;
     private float attackSpeed;
@@ -35,7 +35,7 @@ public class Dagger extends SwordItem {
     private String metal;
     private Hand hand;
 
-    public Dagger(IItemTier tier, int damageIn, float speedIn, SwordItem.Properties properties, EffectInstance effectIn, String metal) {
+    public DaggerItem(IItemTier tier, int damageIn, float speedIn, SwordItem.Properties properties, EffectInstance effectIn, String metal) {
         super( tier, damageIn, speedIn, properties);
         this.attackDamage = damageIn + tier.getAttackDamage();
         this.attackSpeed = speedIn;

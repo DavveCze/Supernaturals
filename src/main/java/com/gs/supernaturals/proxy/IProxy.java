@@ -1,4 +1,4 @@
-package com.gs.supernaturals.setup;
+package com.gs.supernaturals.proxy;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.world.World;
@@ -7,7 +7,7 @@ public interface IProxy {
 
     void init();
 
-    World getClientWorld();
+    World getWorld();
 
-    PlayerEntity getClientPlayer();
+    PlayerEntity getPlayer();
 }

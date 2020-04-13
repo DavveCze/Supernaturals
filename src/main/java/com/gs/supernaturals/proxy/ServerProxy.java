@@ -1,4 +1,4 @@
-package com.gs.supernaturals.setup;
+package com.gs.supernaturals.proxy;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.world.World;
@@ -10,12 +10,12 @@ public class ServerProxy implements IProxy {
     }
 
     @Override
-    public World getClientWorld() {
+    public World getWorld() {
         throw new IllegalStateException("Only run this on the client!");
     }
 
     @Override
-    public PlayerEntity getClientPlayer() {
+    public PlayerEntity getPlayer() {
         throw new IllegalStateException("Only run this on the client!");
     }
 }
