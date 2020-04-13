@@ -3,16 +3,13 @@ package com.gs.supernaturals.entity;
 import com.gs.supernaturals.Supernaturals;
 import com.gs.supernaturals.entity.creatures.KitsuneEntity;
 import com.gs.supernaturals.item.ModItems;
-import com.gs.supernaturals.util.Reference;
-import net.minecraft.entity.*;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IWorld;
-import net.minecraft.world.LightType;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.gen.Heightmap;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -20,12 +17,10 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.ObjectHolder;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Random;
+import java.util.Collection;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = Supernaturals.MOD_ID)
 public class ModEntities {
@@ -39,7 +34,7 @@ public class ModEntities {
 
     @SubscribeEvent(priority = EventPriority.LOWEST)
     public static void registerEntities(RegistryEvent.Register<EntityType<?>> e) {
-       // addSpawn(KITSUNE.get(), 6, 2, 5, xxx);
+        addSpawn(KITSUNE.get(), 6, 2, 5, ForgeRegistries.BIOMES.getValues());
 
 //        EntitySpawnPlacementRegistry.register(KITSUNE.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.WORLD_SURFACE, XXX::spawnPlacement);
     }
@@ -61,7 +56,7 @@ public class ModEntities {
         }
     }
 
-    public static <T extends Entity> void addSpawn(EntityType<T> type, int weightedProb, int min, int max, ArrayList<Biome> biomes) {
+    public static <T extends Entity> void addSpawn(EntityType<T> type, int weightedProb, int min, int max, Collection<Biome> biomes) {
         for (Biome biome : biomes) {
             biome.getSpawns(type.getClassification()).add(new Biome.SpawnListEntry(type, weightedProb, min, max));
         }

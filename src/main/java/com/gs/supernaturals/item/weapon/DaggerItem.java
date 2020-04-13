@@ -2,9 +2,7 @@ package com.gs.supernaturals.item.weapon;
 
 import com.google.common.collect.Multimap;
 import com.gs.supernaturals.Supernaturals;
-import com.gs.supernaturals.effect.ModEffectInstance;
 import com.gs.supernaturals.entity.player.ModPlayerEntity;
-import com.sun.java.accessibility.util.java.awt.TextComponentTranslator;
 import net.minecraft.block.BlockState;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.LivingEntity;
@@ -14,18 +12,15 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.potion.EffectInstance;
-import net.minecraft.potion.Effects;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
 import java.util.List;
-import java.util.Random;
 
 public class DaggerItem extends SwordItem {
 
@@ -61,7 +56,7 @@ public class DaggerItem extends SwordItem {
         }
 
         if(!attacker.getEntityWorld().isRemote) {
-            target.addPotionEffect(new ModEffectInstance(effect));
+            target.addPotionEffect(new EffectInstance(effect));
         }
 
         if(this.hand.equals(Hand.OFF_HAND)){

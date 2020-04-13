@@ -1,8 +1,8 @@
 package com.gs.supernaturals.client.renders;
 
+import com.gs.supernaturals.Supernaturals;
 import com.gs.supernaturals.client.models.KitsuneEntityModelUpdated;
 import com.gs.supernaturals.entity.creatures.KitsuneEntity;
-import com.gs.supernaturals.util.Reference;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.LivingRenderer;
@@ -21,14 +21,8 @@ public class KitsuneEntityRender extends LivingRenderer<KitsuneEntity, KitsuneEn
 
     @Nullable
     @Override
-    protected ResourceLocation getEntityTexture(KitsuneEntity entity) {
-        return new ResourceLocation(Reference.MODID, "textures/entity/kitsune_entity.png");
+    public ResourceLocation getEntityTexture(KitsuneEntity entity) {
+        return new ResourceLocation(Supernaturals.MOD_ID, "textures/entity/kitsune_entity.png");
     }
 
-    public static class RenderFactory implements IRenderFactory<KitsuneEntity> {
-        @Override
-        public EntityRenderer<? super KitsuneEntity> createRenderFor(EntityRendererManager manager) {
-            return new KitsuneEntityRender(manager);
-        }
-    }
 }

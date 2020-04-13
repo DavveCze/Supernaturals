@@ -1,11 +1,10 @@
 package com.gs.supernaturals.item;
 
 import com.gs.supernaturals.Supernaturals;
-import com.gs.supernaturals.effect.ModEffectInstance;
 import com.gs.supernaturals.effect.ModEffects;
-import com.gs.supernaturals.entity.ModEntities;
 import com.gs.supernaturals.item.weapon.DaggerItem;
 import net.minecraft.item.*;
+import net.minecraft.potion.EffectInstance;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -28,9 +27,9 @@ public class ModItems {
     public static final RegistryObject<Item> MAGIC_WOOD  = ITEMS.register("magic_wood" , () -> new Item(new Item.Properties().group(creativeTab)));
     public static final RegistryObject<Item> CURSED_WOOD = ITEMS.register("cursed_wood", () -> new Item(new Item.Properties().group(creativeTab)));
 
-    public static final RegistryObject<DaggerItem> DAGGER            = ITEMS.register("dagger"           , () -> new DaggerItem(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(150).group(creativeTab), new ModEffectInstance(ModEffects.BLEEDING,900,0,false,true), "iron_ingot"));
-    public static final RegistryObject<DaggerItem> SILVER_DAGGER     = ITEMS.register("silver_dagger"    , () -> new DaggerItem(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(132).group(creativeTab), new ModEffectInstance(ModEffects.BLEEDING, 900, 0, false, true), "silver_ingot"));
-    public static final RegistryObject<DaggerItem> WHITE_GOLD_DAGGER = ITEMS.register("white_gold_dagger", () -> new DaggerItem(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(104).group(creativeTab), new ModEffectInstance(ModEffects.BLEEDING, 900, 0, false, true), "white_gold_ingot"));
+    public static final RegistryObject<DaggerItem> DAGGER            = ITEMS.register("dagger"           , () -> new DaggerItem(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(150).group(creativeTab), new EffectInstance(ModEffects.BLEEDING.get(), 900, 0, false, true), "iron_ingot"));
+    public static final RegistryObject<DaggerItem> SILVER_DAGGER     = ITEMS.register("silver_dagger"    , () -> new DaggerItem(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(132).group(creativeTab), new EffectInstance(ModEffects.BLEEDING.get(), 900, 0, false, true), "silver_ingot"));
+    public static final RegistryObject<DaggerItem> WHITE_GOLD_DAGGER = ITEMS.register("white_gold_dagger", () -> new DaggerItem(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(104).group(creativeTab), new EffectInstance(ModEffects.BLEEDING.get(), 900, 0, false, true), "white_gold_ingot"));
 
     public static final RegistryObject<Item> DRUID_LEAF = ITEMS.register("druid_leaf", () -> new Item(new Item.Properties().group(creativeTab)));
 

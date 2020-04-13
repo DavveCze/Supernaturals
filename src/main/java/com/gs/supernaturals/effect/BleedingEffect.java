@@ -8,12 +8,12 @@ import net.minecraft.util.DamageSource;
 
 import javax.annotation.Nullable;
 
-public  class ModEffect extends Effect {
+public  class BleedingEffect extends Effect {
     private final EffectType type;
     private final int liquidColor;
     private String name;
 
-    public ModEffect(EffectType typeIn, int liquidColorIn, String name) {
+    public BleedingEffect(EffectType typeIn, int liquidColorIn, String name) {
         super(typeIn, liquidColorIn);
         this.type = typeIn;
         this.liquidColor = liquidColorIn;
@@ -58,8 +58,8 @@ public  class ModEffect extends Effect {
     }
 
     @Override
-    public ModEffect getEffect() {
-        return (ModEffect)this;
+    public BleedingEffect getEffect() {
+        return this;
     }
 
     @Override
