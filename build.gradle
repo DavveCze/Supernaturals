@@ -45,7 +45,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                examplemod {
+                supernaturals {
                     source sourceSets.main
                 }
             }
@@ -61,7 +61,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                examplemod {
+                supernaturals {
                     source sourceSets.main
                 }
             }
@@ -79,7 +79,7 @@ minecraft {
             args '--mod', modid, '--all', '--output', file('src/generated/resources/')
 
             mods {
-                examplemod {
+                supernaturals {
                     source sourceSets.main
                 }
             }
