@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "silver_ingot",
+  "group": "supernaturals",
   "ingredients": [
     {
       "item": "supernaturals:silver_block"

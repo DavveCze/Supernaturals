@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "supernaturals",
+  "ingredients": [
+    {
+      "item": "supernaturals:white_gold_nugget"
+    },
+    {
+      "item": "supernaturals:white_gold_nugget"
+    },
+    {
+      "item": "supernaturals:white_gold_nugget"
+    },
+    {
+      "item": "supernaturals:white_gold_nugget"
+    },
+    {
+      "item": "supernaturals:white_gold_nugget"
+    },
+    {
+      "item": "supernaturals:white_gold_nugget"
+    },
+    {
+      "item": "supernaturals:white_gold_nugget"
+    },
+    {
+      "item": "supernaturals:white_gold_nugget"
+    },
+    {
+      "item": "supernaturals:white_gold_nugget"
+    }
+  ],
+  "result": {
+    "item": "supernaturals:white_gold_ingot"
+  }
+}

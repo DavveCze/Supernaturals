@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "white_gold_ingot",
+  "group": "supernaturals",
   "ingredients": [
     {
       "item": "supernaturals:white_gold_block"

@@ -1,16 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "I",
+    "S"
   ],
   "key": {
-    "#": {
+    "I": {
       "item": "supernaturals:white_gold_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "supernaturals:white_gold_block"
+    "item": "supernaturals:white_gold_dagger"
   }
 }
