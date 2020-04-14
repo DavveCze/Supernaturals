@@ -1,11 +1,10 @@
 package com.gs.supernaturals.item.weapon;
 
 import com.google.common.collect.Multimap;
-import com.gs.supernaturals.Supernaturals;
+import com.gs.supernaturals.item.ModItemTier;
 import net.minecraft.block.BlockState;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -26,12 +25,10 @@ import java.util.function.Supplier;
 public class DaggerItem extends SwordItem {
 
     private Supplier<Effect> effect;
-    private String metal;
 
-    public DaggerItem(IItemTier tier, int damageIn, float speedIn, SwordItem.Properties properties, Supplier<Effect> effectIn, String metal) {
+    public DaggerItem(IItemTier tier, int damageIn, float speedIn, SwordItem.Properties properties, Supplier<Effect> effectIn) {
         super(tier, damageIn, speedIn, properties);
         this.effect = effectIn;
-        this.metal = metal;
     }
 
     /**
@@ -47,14 +44,21 @@ public class DaggerItem extends SwordItem {
         if (!attacker.getEntityWorld().isRemote) {
             target.addPotionEffect(new EffectInstance(effect.get(), 900, 0, false, true));
         }
-        if (this.metal.equals("silver_ingot") && !attacker.getEntityWorld().isRemote) {
-            // TODO: Add x2 Damage to Supernatural Monsters
-        } else if (this.metal.equals("white_gold_ingot") && !attacker.getEntityWorld().isRemote) {
-            // TODO: Get Low / High Range from Design
-            if (Math.random() * 100 >= 90) {
-                target.attackEntityFrom(DamageSource.MAGIC, 2.0f);
+
+        if (this.getTier() instanceof ModItemTier) {
+            switch ((ModItemTier)this.getTier()) {
+                case SILVER:
+                    // TODO: Add x2 Damage to Supernatural Monsters
+                    break;
+                case WHITE_GOLD:
+                    // TODO: Get Low / High Range from Design
+                    if (Math.random() * 100 >= 90) {
+                        target.attackEntityFrom(DamageSource.MAGIC, 2.0f);
+                    }
+                    break;
             }
         }
+
         return true;
     }
 

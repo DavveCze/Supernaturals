@@ -8,7 +8,7 @@ import net.minecraft.util.DamageSource;
 
 import javax.annotation.Nullable;
 
-public  class BleedingEffect extends Effect {
+public class BleedingEffect extends Effect {
     private final EffectType type;
     private final int liquidColor;
     private String name;

@@ -4,7 +4,6 @@ import com.gs.supernaturals.Supernaturals;
 import com.gs.supernaturals.effect.ModEffects;
 import com.gs.supernaturals.item.weapon.DaggerItem;
 import net.minecraft.item.*;
-import net.minecraft.potion.EffectInstance;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -23,9 +22,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> AMETHYST = ITEMS.register("amethyst", () -> new Item(new Item.Properties().group(creativeTab)));
 
-    public static final RegistryObject<DaggerItem> DAGGER            = ITEMS.register("dagger"           , () -> new DaggerItem(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(150).group(creativeTab), ModEffects.BLEEDING, "iron_ingot"));
-    public static final RegistryObject<DaggerItem> SILVER_DAGGER     = ITEMS.register("silver_dagger"    , () -> new DaggerItem(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(132).group(creativeTab), ModEffects.BLEEDING, "silver_ingot"));
-    public static final RegistryObject<DaggerItem> WHITE_GOLD_DAGGER = ITEMS.register("white_gold_dagger", () -> new DaggerItem(ItemTier.IRON, 1, -2.4f, new SwordItem.Properties().maxDamage(104).group(creativeTab), ModEffects.BLEEDING, "white_gold_ingot"));
+    public static final RegistryObject<DaggerItem> DAGGER            = ITEMS.register("dagger"           , () -> new DaggerItem(ItemTier.IRON         , 1, -2.4f, new SwordItem.Properties().maxDamage(150).group(creativeTab), ModEffects.BLEEDING));
+    public static final RegistryObject<DaggerItem> SILVER_DAGGER     = ITEMS.register("silver_dagger"    , () -> new DaggerItem(ModItemTier.SILVER    , 1, -2.4f, new SwordItem.Properties().maxDamage(132).group(creativeTab), ModEffects.BLEEDING));
+    public static final RegistryObject<DaggerItem> WHITE_GOLD_DAGGER = ITEMS.register("white_gold_dagger", () -> new DaggerItem(ModItemTier.WHITE_GOLD, 1, -2.4f, new SwordItem.Properties().maxDamage(104).group(creativeTab), ModEffects.BLEEDING));
 
     public static final RegistryObject<Item> DRUID_LEAF = ITEMS.register("druid_leaf", () -> new Item(new Item.Properties().group(creativeTab)));
 
