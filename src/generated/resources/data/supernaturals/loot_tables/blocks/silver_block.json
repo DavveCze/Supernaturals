@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "supernaturals:silver_ore"
+          "name": "supernaturals:silver_block"
         }
       ],
       "conditions": [
