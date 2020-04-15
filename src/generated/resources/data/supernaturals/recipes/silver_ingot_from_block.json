@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "supernaturals",
+  "ingredients": [
+    {
+      "item": "supernaturals:silver_block"
+    }
+  ],
+  "result": {
+    "item": "supernaturals:silver_ingot",
+    "count": 9
+  }
+}

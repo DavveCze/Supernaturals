@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "supernaturals:white_gold_dagger"
+    ]
+  },
+  "criteria": {
+    "has_white_gold_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supernaturals:white_gold_ingot"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supernaturals:white_gold_dagger"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_white_gold_ingot",
+      "has_the_recipe"
+    ]
+  ]
+}

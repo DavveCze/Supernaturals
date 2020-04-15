@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "supernaturals:silver_block"
+    },
+    {
+      "item": "supernaturals:silver_block"
+    },
+    {
+      "item": "supernaturals:silver_block"
+    },
+    {
+      "item": "supernaturals:silver_block"
+    },
+    {
+      "item": "supernaturals:silver_block"
+    },
+    {
+      "item": "supernaturals:silver_block"
+    },
+    {
+      "item": "supernaturals:silver_block"
+    },
+    {
+      "item": "supernaturals:silver_block"
+    },
+    {
+      "item": "supernaturals:silver_block"
+    }
+  ],
+  "result": {
+    "item": "supernaturals:silver_block"
+  }
+}

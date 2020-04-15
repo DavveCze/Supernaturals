@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "supernaturals",
+  "ingredients": [
+    {
+      "item": "supernaturals:white_gold_block"
+    }
+  ],
+  "result": {
+    "item": "supernaturals:white_gold_ingot",
+    "count": 9
+  }
+}
