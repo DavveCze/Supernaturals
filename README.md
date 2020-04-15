@@ -17,4 +17,4 @@ Owned by ***DavveCze***
 
 Designs by ***DavveCze*** & ***StarGer***  
 Art by ***Expora8***, ***MoonlitLamps***, ***Noxy***  
-Coding & Production by ***GenreShinobi***, ***Lukas***
+Coding & Production by ***GenreShinobi***, [***Lukas***](https://github.com/lmarianski)
