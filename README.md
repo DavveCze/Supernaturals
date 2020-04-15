@@ -16,5 +16,5 @@ Download the latest build of Supernaturals and add it to your mods folder. The m
 Owned by ***DavveCze***  
 
 Designs by ***DavveCze*** & ***StarGer***  
-Art by ***Expora8***, ***MoonlitLamps***, ***CoderBoi***, ***Noxy***  
-Coding & Production by ***GenreShinobi*** 
+Art by ***Expora8***, ***MoonlitLamps***, ***Noxy***  
+Coding & Production by ***GenreShinobi***, ***Lukas***
